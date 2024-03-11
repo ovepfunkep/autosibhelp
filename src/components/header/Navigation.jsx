@@ -1,4 +1,4 @@
-import AnchorButton from "./header/AnchorButton";
+import AnchorButton from "./AnchorButton";
 
 export default function Navigation() {
     return (

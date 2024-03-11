@@ -1,17 +1,20 @@
 /** @type {import('tailwindcss').Config} */
-const colors = require('tailwindcss/colors')
 
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,jsx}",
   ],
   theme: {
-    colors: {
-      ...colors,
-      primary: '#232323',
+    extend: {
+      fontFamily: {
+        primary: ['"Exo 2"', "sans-serif"],
+      },
+      colors: {
+        primary: '#232323',
+        accent: '#ED1B24',
+      },
     },
-    extend: {},
   },
   plugins: [],
 }
